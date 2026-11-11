@@ -1367,3 +1367,31 @@ html[data-theme="dark"] #hero .recruiter-link-primary {
     transform: none;
   }
 }
+
+/* Final About section refinements */
+
+#about h2 {
+  font-size: clamp(2.75rem, 5vw, 4.25rem);
+  line-height: 1.08;
+  margin-bottom: 2rem;
+}
+
+#about .about-copy > p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+#about .about-strengths {
+  gap: 0.6rem;
+}
+
+#about .about-strengths span {
+  padding: 0.45rem 0.85rem;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 48rem) {
+  #about h2 {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+  }
+}
