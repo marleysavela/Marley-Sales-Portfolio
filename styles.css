@@ -1259,3 +1259,111 @@ html[data-theme="dark"] th {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
+
+/* ======================================
+   PORTFOLIO FINAL POLISH
+   ====================================== */
+
+/* About section: editorial two-column layout */
+
+#about .about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.6fr);
+  align-items: start;
+  gap: clamp(2rem, 5vw, 4rem);
+  margin-top: 2.5rem;
+}
+
+#about .about-portrait {
+  width: 100%;
+  max-width: 20rem;
+  margin: 0;
+}
+
+#about .about-portrait img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+}
+
+#about .about-copy {
+  min-width: 0;
+}
+
+#about .about-copy > p {
+  max-width: 38rem;
+}
+
+#about .about-copy > p:first-child {
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  color: var(--color-ink);
+}
+
+#about .about-copy > p:not(:first-child):not(.academic-highlight) {
+  color: var(--color-muted);
+}
+
+#about .academic-highlight {
+  margin-top: 1.75rem;
+  background: var(--color-sage);
+  border-left-color: var(--color-accent);
+  color: var(--color-ink);
+}
+
+/* Recruiter buttons: consistent theme colors */
+
+#hero .recruiter-link-primary {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #ffffff;
+  border-radius: 100px;
+}
+
+#hero .recruiter-link-secondary {
+  background: transparent;
+  border-color: var(--color-border);
+  color: var(--color-ink);
+  border-radius: 100px;
+}
+
+#hero .recruiter-link-primary:hover,
+#hero .recruiter-link-secondary:hover {
+  background: var(--color-peach);
+  border-color: var(--color-accent);
+  color: var(--color-ink);
+}
+
+html[data-theme="dark"] #hero .recruiter-link-primary {
+  color: #19181c;
+}
+
+/* Responsive About layout */
+
+@media (max-width: 48rem) {
+  #about .about-layout {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  #about .about-portrait {
+    width: min(15rem, 75%);
+    margin: 0 auto 0.75rem;
+  }
+
+  #about .about-copy > p {
+    max-width: 100%;
+  }
+}
+
+/* Motion accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .recruiter-link {
+    transition: none;
+  }
+
+  .recruiter-link:hover {
+    transform: none;
+  }
+}
