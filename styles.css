@@ -1178,3 +1178,65 @@ html[data-theme="dark"] th {
     grid-column: auto;
   }
 }
+
+/* Resume and LinkedIn links */
+
+.recruiter-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: 1.75rem;
+}
+
+.recruiter-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.4rem;
+  border: 1px solid currentColor;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.recruiter-link-primary {
+  background: #b77b86;
+  border-color: #b77b86;
+  color: #ffffff;
+}
+
+.recruiter-link-secondary {
+  background: transparent;
+  color: inherit;
+}
+
+.recruiter-link:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.recruiter-link:focus-visible {
+  outline: 3px solid #b77b86;
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  .recruiter-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* Academic achievements */
+
+.academic-highlight {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid #b77b86;
+  background: rgba(183, 123, 134, 0.08);
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
