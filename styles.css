@@ -920,3 +920,118 @@ html[data-theme="dark"] th {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================================
+   FEATURED TEKSYSTEMS B2B SALES PROJECT
+   ========================================= */
+
+.rfp-feature {
+  margin: 3rem 0;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-accent);
+  border-radius: var(--radius);
+}
+
+.rfp-kicker {
+  color: var(--color-accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.rfp-feature h3 {
+  margin: 0.75rem 0 1.5rem;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  line-height: 1.12;
+  font-weight: 500;
+}
+
+.rfp-feature h3 em {
+  color: var(--color-accent);
+  font-weight: 400;
+}
+
+.rfp-intro {
+  max-width: 48rem;
+  color: var(--color-muted);
+  font-size: 1rem;
+}
+
+.rfp-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2.5rem 0;
+}
+
+.rfp-stats > div {
+  padding: 1.25rem;
+  background: var(--color-sage);
+  border: 1px solid var(--color-border);
+  border-radius: 0.4rem;
+}
+
+.rfp-stats strong {
+  display: block;
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.rfp-stats span {
+  display: block;
+  margin-top: 0.6rem;
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.rfp-feature h4 {
+  margin-top: 2.25rem;
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  letter-spacing: 0.09em;
+}
+
+.rfp-feature > p {
+  max-width: 48rem;
+}
+
+.rfp-skills {
+  margin: 2rem 0;
+}
+
+.rfp-skills span {
+  display: inline-block;
+  margin: 0.25rem 0.35rem 0.25rem 0;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: 100px;
+  color: var(--color-ink);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.rfp-note {
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.75rem;
+}
+
+/* Responsive layout */
+@media (max-width: 40rem) {
+  .rfp-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .rfp-feature {
+    padding: 1.25rem;
+  }
