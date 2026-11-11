@@ -847,3 +847,76 @@ html[data-theme="dark"] th {
     scroll-behavior: auto;
   }
 }
+
+
+
+/* ======================================
+   B2B SALES PORTFOLIO — EXPERIENCE
+   ====================================== */
+
+#experience > p:not(.section-label) {
+  max-width: 48rem;
+  color: var(--color-muted);
+}
+
+#experience h2 em {
+  color: var(--color-accent);
+  font-weight: 400;
+}
+
+.experience-card {
+  margin-top: 2.5rem;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+
+.experience-card:nth-of-type(even) {
+  background: var(--color-sage);
+}
+
+.experience-label {
+  color: var(--color-accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.experience-card h3 {
+  margin-top: 0.5rem;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+}
+
+.experience-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 2rem 0;
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.stat strong {
+  display: block;
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.stat span {
+  display: block;
+  margin-top: 0.65rem;
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 40rem) {
+  .experience-stats {
+    grid-template-columns: 1fr;
+  }
+}
