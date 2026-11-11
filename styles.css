@@ -1395,3 +1395,78 @@ html[data-theme="dark"] #hero .recruiter-link-primary {
     font-size: clamp(2.5rem, 8vw, 3.5rem);
   }
 }
+
+/* ======================================
+   REFINED MINIMAL HOMEPAGE
+   ====================================== */
+
+#hero {
+  padding-top: clamp(3.5rem, 7vw, 6rem);
+  padding-bottom: clamp(3.5rem, 7vw, 6rem);
+}
+
+#hero h1 {
+  margin-bottom: 2rem;
+}
+
+#hero .hero-copy {
+  max-width: 36rem;
+  font-size: clamp(0.95rem, 1.3vw, 1.05rem);
+  line-height: 1.9;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+#hero .hero-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--color-accent);
+  color: var(--color-ink);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#hero .hero-actions a span {
+  color: var(--color-accent);
+  transition: transform 0.2s ease;
+}
+
+#hero .hero-actions a:hover {
+  color: var(--color-accent);
+}
+
+#hero .hero-actions a:hover span {
+  transform: translate(2px, -2px);
+}
+
+#hero .specialties {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+
+@media (max-width: 40rem) {
+  .hero-actions {
+    gap: 1.5rem;
+  }
+
+  #hero {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #hero .hero-actions a span {
+    transition: none;
+  }
+}
