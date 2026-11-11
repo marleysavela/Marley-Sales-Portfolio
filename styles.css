@@ -1100,3 +1100,81 @@ html[data-theme="dark"] th {
     grid-column: auto;
   }
 }
+
+/* ======================================
+   SALES LEADERSHIP & COMMUNITY SECTION
+   ====================================== */
+
+#leadership h2 em {
+  color: var(--color-accent);
+  font-weight: 400;
+}
+
+.leadership-intro {
+  max-width: 46rem;
+  color: var(--color-muted);
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.leadership-card {
+  padding: clamp(1.4rem, 3vw, 2.25rem);
+  border: 1px solid var(--color-border);
+  border-top: 2px solid var(--color-accent);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+
+.leadership-card:last-child {
+  grid-column: 1 / -1;
+  background: var(--color-sage);
+}
+
+.leadership-label {
+  color: var(--color-accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.leadership-card h3 {
+  margin-top: 0.75rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  line-height: 1.15;
+}
+
+.leadership-card > p {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.leadership-tags {
+  margin-top: 1.5rem;
+}
+
+.leadership-tags span {
+  display: inline-block;
+  margin: 0.25rem 0.3rem 0.25rem 0;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 100px;
+  color: var(--color-ink);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+@media (max-width: 40rem) {
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-card:last-child {
+    grid-column: auto;
+  }
+}
