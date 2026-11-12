@@ -278,7 +278,7 @@
 
 
 <!-- FEATURED B2B SALES CASE STUDY -->
-<div class="rfp-feature">
+<article class="rfp-feature" data-category="sales">
 
   <p class="rfp-kicker">
     FEATURED PROJECT / FIRST-PLACE TEAM
@@ -417,36 +417,46 @@
     First-place team result; no real customer contract.
   </p>
 
-</div>
+</article>
 <!-- END FEATURED CASE STUDY -->
+
 
 
 <div class="project-filters"
      role="group"
-     aria-label="Filter projects">
-  <button type="button" class="filter-btn active"
-          data-filter="all" aria-pressed="true">
-    All work
+     aria-label="Filter portfolio projects">
+
+  <button type="button"
+          class="filter-btn active"
+          data-filter="all"
+          aria-pressed="true">
+    All Projects
   </button>
-  <button type="button" class="filter-btn"
-          data-filter="crm" aria-pressed="false">
-    CRM Operations
+
+  <button type="button"
+          class="filter-btn"
+          data-filter="sales"
+          aria-pressed="false">
+    Sales Presentations
   </button>
-  <button type="button" class="filter-btn"
-          data-filter="analytics" aria-pressed="false">
-    Analytics
+
+  <button type="button"
+          class="filter-btn"
+          data-filter="salesforce"
+          aria-pressed="false">
+    Salesforce Projects
   </button>
+
 </div>
 
 <p id="filter-status"
    class="sr-only"
    role="status"
    aria-live="polite"></p>
-
-
       
 <!-- EVER.AG PROJECT 1 -->
-<article aria-labelledby="project-1-title" data-category="crm">
+<article aria-labelledby="project-1-title"
+         data-category="salesforce">
 
   <h3 id="project-1-title">
     Strengthening Customer Relationships Through Salesforce
@@ -484,7 +494,8 @@
 
 
 <!-- EVER.AG PROJECT 2 -->
-<article aria-labelledby="project-2-title" data-category="analytics">
+<article aria-labelledby="project-2-title"
+         data-category="salesforce">
 
   <h3 id="project-2-title">
     Turning Sales Data Into Actionable Insights
