@@ -106,11 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
       origin: "right",
       distance: "30px"
     });
-
-    reveal.reveal("#projects article", {
-      origin: "bottom",
-      interval: 130
-    });
   }
 
 
@@ -143,10 +138,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (match) visibleCount++;
       });
-
-      if (!reduceMotion && typeof ScrollReveal !== "undefined") {
-        ScrollReveal().sync();
-      }
 
       filterStatus.textContent =
         `${visibleCount} projects displayed.`;
